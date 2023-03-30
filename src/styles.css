@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+input {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.back-btn {
+  position: absolute;
+  top: 2rem;
+}
+
+.avatar-container img {
+  border-radius: 50%;
+  max-width: 100%;
+  /* object-fit: contain; */
+}
+
+.App {
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+.App > * {
+  height: 100%;
+  /* background-color: green; */
+}
+
+.Header {
+  text-align: center;
+}
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  padding: 1.5rem;
+  gap: 1rem;
+  border: 1px solid black;
+  /* width: 100%; */
+}
+
+.HomePage > * {
+  flex: 1;
+}
+
+/* *
+{
+  outline: 1px solid red;
+} */
+
+.EmployeeListItem {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  max-height: 100px;
+}
+
+.EmployeeListItem > .avatar-container {
+  flex-basis: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.EmployeeListItem h3,
+.EmployeePage .info-container h3 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
+.EmployeePage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+
+.EmployeePage .avatar-container {
+  flex-basis: 150px;
+  min-width: 100px;
+}
+
+.EmployeePage > * {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.EmployeePage *:first-child {
+  justify-content: center;
+}
+
+.EmployeePage > .intro {
+  /* display: flex;
+  justify-content: center; */
+  gap: 0.75rem;
+  align-items: center;
+  max-height: 150px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid black;
+}
+
+.EmployeePage .contact-ind {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid gray;
+}
